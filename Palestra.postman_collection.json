@@ -1,0 +1,168 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Palestra",
+		"_postman_id": "02135083-d1fa-4464-dac9-3348c9761dec",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Gastos do deputado",
+			"request": {
+				"url": {
+					"raw": "https://dadosabertos.camara.leg.br/api/v2/deputados/204554/despesas?ordem=ASC&ordenarPor=ano",
+					"protocol": "https",
+					"host": [
+						"dadosabertos",
+						"camara",
+						"leg",
+						"br"
+					],
+					"path": [
+						"api",
+						"v2",
+						"deputados",
+						"204554",
+						"despesas"
+					],
+					"query": [
+						{
+							"key": "ordem",
+							"value": "ASC",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "ordenarPor",
+							"value": "ano",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<<<<<<<<<<<<<<<<<<<<<<"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Profissoes do Parlamentar",
+			"request": {
+				"url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204554/profissoes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Ocupacoes",
+			"request": {
+				"url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204554/ocupacoes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Bolsa Familia Portal da Transparencia",
+			"request": {
+				"url": {
+					"raw": "http://api.portaldatransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?codigoIbge=3109402&mesAno=202012&pagina=1",
+					"protocol": "http",
+					"host": [
+						"api",
+						"portaldatransparencia",
+						"gov",
+						"br"
+					],
+					"path": [
+						"api-de-dados",
+						"bolsa-familia-por-municipio"
+					],
+					"query": [
+						{
+							"key": "codigoIbge",
+							"value": "3109402",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "mesAno",
+							"value": "202012",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pagina",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "chave-api-dados",
+						"value": "4cd6f0269a0267a12fe227e68cc180ba",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Relacao ocupantes Imoveis funcionais",
+			"request": {
+				"url": {
+					"raw": "http://api.portaldatransparencia.gov.br/api-de-dados/permissionarios?pagina=1",
+					"protocol": "http",
+					"host": [
+						"api",
+						"portaldatransparencia",
+						"gov",
+						"br"
+					],
+					"path": [
+						"api-de-dados",
+						"permissionarios"
+					],
+					"query": [
+						{
+							"key": "pagina",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "chave-api-dados",
+						"value": "4cd6f0269a0267a12fe227e68cc180ba",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

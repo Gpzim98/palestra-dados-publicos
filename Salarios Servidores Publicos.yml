@@ -1,0 +1,13 @@
+curl 'http://177.36.214.42:8090/ecidade_transparencia/folha_pagamentos/pesquisar' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/javascript, */*' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Origin: http://177.36.214.42:8090' \
+  -H 'Referer: http://177.36.214.42:8090/ecidade_transparencia/folha_pagamentos/pesquisar?instituicao=5&ano=2021&mes=9&demitidos=0&cargo=&lotacao=&vinculo=&matricula=&nome=' \
+  -H 'Accept-Language: en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7' \
+  -H 'Cookie: PHPSESSID=s5o6je5crm9p1ue30m3968c174' \
+  --data-raw 'instituicao=5&ano=2021&mes=9&demitidos=0&cargo=&lotacao=&vinculo=&matricula=&nome=&_search=false&nd=1635283067202&rows=150&page=1&sidx=Servidor.nome&sord=asc' \
+  --compressed \
+  --insecure
